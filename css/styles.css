@@ -1,0 +1,150 @@
+/* Reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #004080;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 70px; /* Adjust for square logo */
+    width: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#hero {
+    background-image: url('../images/hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 100px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-content h1 {
+    font-size: 4rem; /* Double the font size */
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 2rem; /* Increase paragraph font size */
+    margin-bottom: 20px;
+}
+.cta-button {
+    background-color: #004080;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#services {
+    padding: 50px 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.services-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+
+#why-choose-us,
+#appraisal-uses,
+#faq,
+#contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact form input, 
+#contact form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 80%;
+    max-width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact form button {
+    background-color: #004080;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #004080;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer .footer-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer-nav ul li {
+    margin-left: 20px;
+}
+
+footer .footer-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
