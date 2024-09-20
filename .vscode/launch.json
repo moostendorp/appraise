@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open index.html",
-            "file": "/mnt/data/work/eastonsite/index.html"
+            "file": "/mnt/data/work/appraise/index.html"
         }
     ]
 }
