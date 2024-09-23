@@ -20,6 +20,27 @@ header {
     align-items: center;
 }
 
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #004080;
+}
+
+.contact-info {
+    font-size: 1.2rem; /* Adjust size for prominence */
+    color: #fff;
+}
+
+.contact-info strong {
+    font-size: 1.4rem; /* Make phone number stand out */
+    color: #ff5722; /* Highlight the phone number */
+}
+
+
+
+
 .logo {
     height: 70px; /* Adjust for square logo */
     width: auto;
@@ -119,9 +140,36 @@ nav ul li a {
     object-fit: contain; /* Prevents the image from being cut off */
 }
 
-#why-choose-us,
+.boxed-section {
+    background-color: #f1e1a9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    max-width: 900px;
+    text-align: center;
+    border: 2px solid #004080; /* Border matching the site's theme */
+}
+
+.process-list {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+.process-list li {
+    margin-bottom: 20px;
+}
+
+.process-list p {
+    text-align: justify;
+}
+
+
+
+
+#our-process,
 #appraisal-uses,
-#faq,
+#about-us,
 #contact {
     padding: 50px 20px;
     text-align: center;
@@ -182,3 +230,40 @@ footer .footer-nav ul li a {
         flex: 1 1 100%; /* Make service items full width */
     }
 }
+
+.about-section {
+    background-color: #e6f2ff; /* Light blue to match the site's theme */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 30px auto;
+    text-align: center;
+    border: 2px solid #004080; /* Border matching the site's theme */
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #004080; /* Heading color matching the site’s primary color */
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    text-align: justify;
+    color: #333;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.logos img {
+    height: 70px; /* Adjust the size as needed */
+    width: auto;
+    filter: grayscale(100%); /* Optional: make logos grayscale for consistency */
+}
+
