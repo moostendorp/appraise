@@ -63,7 +63,7 @@ nav ul li a {
 
 #hero {
     background-image: url('../images/hero-background.jpg');
-    background-size: cover;
+    background-size:contain;
     background-position: center;
     color: #ffffff;
     padding: 100px 20px;
