@@ -63,8 +63,8 @@ nav ul li a {
 
 #hero {
     background-image: url('../images/hero-background.jpg');
-    background-size:contain;
-    background-position: center;
+    background-size:cover;
+    background-position: top;
     color: #ffffff;
     padding: 100px 20px;
     min-height: 100vh;
@@ -230,12 +230,7 @@ footer .footer-nav ul li a {
     .service-item {
         flex: 1 1 100%; /* Make service items full width */
     }
-}
-@media only screen and (max-width: 600px) {
-    .your-class {
-        background-size: contain; /* Ensures the image scales for mobile */
-        background-repeat: no-repeat;
-    }
+    
 }
 .about-section {
     background-color: #e6f2ff; /* Light blue to match the site's theme */
