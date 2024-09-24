@@ -82,7 +82,7 @@ nav ul li a {
 /* For mobile screens */
 @media only screen and (max-width: 480px) {
     .hero-section {
-        background-image: url('../images/images-664.jpg');
+        background-image: url('../images/image-664.jpg');
         background-size: cover;
         background-position: center;
     }
