@@ -60,19 +60,35 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
 }
-
+/* Default for desktop */
 #hero {
-    background-image: url('../images/hero-background.jpg');
-    background-size:cover;
-    background-position: top;
+    
+    background-image: url('../images/image-1184.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;   
     color: #ffffff;
     padding: 100px 20px;
-    min-height: 100vh;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     
 }
+
+
+
+/* For mobile screens */
+@media only screen and (max-width: 768px) {
+    .hero-section {
+        background-image: url('../images/images-664.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+
 
 .hero-overlay {
     position: absolute;
@@ -223,6 +239,9 @@ footer .footer-nav ul li a {
     color: #fff;
     text-decoration: none;
 }
+
+
+
 @media (max-width: 768px) {
     .hero-content h1 {
         font-size: 2.5rem; /* Resize hero text */
@@ -232,6 +251,8 @@ footer .footer-nav ul li a {
     }
     
 }
+
+
 .about-section {
     background-color: #e6f2ff; /* Light blue to match the site's theme */
     padding: 40px;
