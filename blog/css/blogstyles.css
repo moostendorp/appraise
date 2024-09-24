@@ -1,0 +1,174 @@
+/* Reset and basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contact-info {
+    font-size: 1.2rem; /* Adjust size for prominence */
+    color: #fff;
+}
+
+.contact-info strong {
+    font-size: 1.4rem; /* Make phone number stand out */
+    color: #ffb522; /* Highlight the phone number */
+}
+
+
+.logo {
+    height: 70px; /* Adjust for square logo */
+    width: auto;
+}
+
+.article-content {
+    display: none;
+}
+body:not(:target)  {
+    display: block;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Show only the targeted article when it's selected */
+:target {
+    display: block;
+}
+/* Ensure only the targeted article is shown */
+.article-content:not(:target) {
+    display: none;
+}
+
+/* Header styles */
+header {
+    background-color: #004080;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main content sections (articles) */
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    display: none; /* Hide all articles by default */
+    text-align: justify;
+    font-family: Arial, sans-serif;
+
+}
+
+/* Show the targeted article */
+section:target {
+    display: block;
+}
+
+/* Footer styles */
+footer {
+    background-color: #004080;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-family: Arial, sans-serif;
+}
+
+footer .footer-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    
+}
+
+footer .footer-nav ul li {
+    margin-left: 20px;
+}
+
+footer .footer-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* "Back to Top" link styling */
+section p a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #333;
+    
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+    text-align: justify;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+}
+
+section p a:hover {
+    text-decoration: underline;
+}
+
+section h1 ,h2,h3{
+
+    color: #004080; /* Adjust to match your theme */
+    line-height: 2;
+    font-family: Arial, sans-serif;
+}
+
+
+section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+section ul li {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+/* Optional: Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+.boxed-section {
+    background-color: #fefaeb;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    max-width: 900px;
+    text-align: center;
+    border: 2px solid #004080; /* Border matching the site's theme */
+}

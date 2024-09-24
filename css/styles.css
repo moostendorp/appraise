@@ -35,7 +35,7 @@ header {
 
 .contact-info strong {
     font-size: 1.4rem; /* Make phone number stand out */
-    color: #ff5722; /* Highlight the phone number */
+    color: #ffb522; /* Highlight the phone number */
 }
 
 
@@ -265,5 +265,44 @@ footer .footer-nav ul li a {
     height: 70px; /* Adjust the size as needed */
     width: auto;
     filter: grayscale(100%); /* Optional: make logos grayscale for consistency */
+}
+#house-replacement-value {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#house-replacement-value h1 {
+    font-size: 2rem;
+    color: #004080;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#house-replacement-value h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#house-replacement-value ul, 
+#house-replacement-value ol {
+    margin-left: 20px;
+}
+
+#house-replacement-value ul li, 
+#house-replacement-value ol li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+#house-replacement-value p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 20px;
 }
 
