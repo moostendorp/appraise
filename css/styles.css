@@ -9,6 +9,8 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
     color: #333;
+    font-size: 16px; /* Base size */
+    -webkit-text-size-adjust: 100%; /* Prevents automatic text scaling */
 }
 
 header {
@@ -274,6 +276,10 @@ footer .footer-nav ul li a {
 
 /* For mobile screens */
 @media only screen and (max-width: 768px) {
+   
+    html {
+        font-size: 14px; /* 1rem = 13px for iPhones and smaller screens */
+    }
     #hero {
         background-image: url('../images/image-664.jpg');
         background-size: cover;
@@ -282,7 +288,7 @@ footer .footer-nav ul li a {
         
     }
     .contact-info {
-        font-size:medium; 
+        font-size:1.2rem; 
     }
     .header-container {
         font-size:1.2rem; 
@@ -292,7 +298,37 @@ footer .footer-nav ul li a {
         font-size: 2rem; /* Resize hero text */
     }
     .service-item {
-        font-size: small;
+        
         flex: 1 1 100%; /* Make service items full width */
+        
     }
+}
+
+@media only screen and (max-width: 480px) {
+    html {
+        font-size: 13px; /* 1rem = 13px for iPhones and smaller screens */
+    }
+    #hero {
+        background-image: url('../images/image-664.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+    }
+    .contact-info {
+        font-size:1.2rem; 
+    }
+    .header-container {
+        font-size:1.2rem; 
+       
+    }
+    .hero-content h1 {
+        font-size: 2rem; /* Resize hero text */
+    }
+    .service-item {
+        
+        flex: 1 1 100%; /* Make service items full width */
+        
+    }
+    
 }
