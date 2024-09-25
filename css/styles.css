@@ -76,29 +76,7 @@ nav ul li a {
     
 }
 
-/* For mobile screens */
-@media only screen and (max-width: 768px) {
-    #hero {
-        background-image: url('../images/image-664.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        
-    }
-    .contact-info {
-        font-size:medium; 
-    }
-    .header-container {
-        font-size:small; 
-    }
-    .hero-content h1 {
-        font-size: 2.5rem; /* Resize hero text */
-    }
-    .service-item {
-        font-size: small;
-        flex: 1 1 100%; /* Make service items full width */
-    }
-}
+
 
 
 
@@ -126,6 +104,7 @@ nav ul li a {
     margin-bottom: 20px;
     color: #ffffff; /* Keeps text color white */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Dark shadow for contrast */
+    font-size: 4rem; /* Scales relative to the base font size */
 }
 
 .hero-content p {
@@ -293,4 +272,27 @@ footer .footer-nav ul li a {
     filter: grayscale(100%); /* Optional: make logos grayscale for consistency */
 }
 
-
+/* For mobile screens */
+@media only screen and (max-width: 768px) {
+    #hero {
+        background-image: url('../images/image-664.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+    }
+    .contact-info {
+        font-size:medium; 
+    }
+    .header-container {
+        font-size:1.2rem; 
+       
+    }
+    .hero-content h1 {
+        font-size: 2rem; /* Resize hero text */
+    }
+    .service-item {
+        font-size: small;
+        flex: 1 1 100%; /* Make service items full width */
+    }
+}
