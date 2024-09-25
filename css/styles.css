@@ -61,9 +61,8 @@ nav ul li a {
     font-weight: bold;
 }
 /* Default for desktop */
-#hero {
-    
-    background-image: url('../images/image-1184.jpg');
+#hero {  
+    background-image: url('../images/image-664.jpg'), url('../images/image-1184.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -84,6 +83,7 @@ nav ul li a {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        
     }
     .contact-info {
         font-size:medium; 
