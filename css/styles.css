@@ -77,8 +77,6 @@ nav ul li a {
     
 }
 
-
-
 /* For mobile screens */
 @media only screen and (max-width: 768px) {
     #hero {
@@ -86,6 +84,19 @@ nav ul li a {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+    }
+    .contact-info {
+        font-size:medium; 
+    }
+    .header-container {
+        font-size:small; 
+    }
+    .hero-content h1 {
+        font-size: 2.5rem; /* Resize hero text */
+    }
+    .service-item {
+        font-size: small;
+        flex: 1 1 100%; /* Make service items full width */
     }
 }
 
@@ -243,15 +254,7 @@ footer .footer-nav ul li a {
 
 
 
-@media (max-width: 768px) {
-    .hero-content h1 {
-        font-size: 2.5rem; /* Resize hero text */
-    }
-    .service-item {
-        flex: 1 1 100%; /* Make service items full width */
-    }
-    
-}
+
 
 
 .about-section {
