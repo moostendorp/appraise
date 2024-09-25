@@ -80,11 +80,12 @@ nav ul li a {
 
 
 /* For mobile screens */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
     .hero-section {
         background-image: url('../images/image-664.jpg');
         background-size: cover;
         background-position: center;
+        background-repeat: no-repeat;
     }
 }
 
