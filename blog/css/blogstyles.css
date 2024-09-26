@@ -1,24 +1,74 @@
-/* Reset and basic styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 16px; /* Base size */
+    -webkit-text-size-adjust: 100%; /* Prevents automatic text scaling */
+}
 
-.contact-info {
-    font-size: 1.2rem; /* Adjust size for prominence */
+.header-container {
+    grid-template-columns: auto auto 1fr; /* Logo, flexible space for nav, contact info */
+    grid-template-rows: auto 1fr;   /* Two rows: one for contact-info, one for nav */
     color: #fff;
+    padding: 10px;
+    display: grid;
+    align-items: center; /* Vertically center all items in one line */
+    background-color: #004080;
+    gap: 10px;
+    
 }
-
-.contact-info strong {
-    font-size: 1.4rem; /* Make phone number stand out */
-    color: #ffb522; /* Highlight the phone number */
-}
-
 
 .logo {
-    height: 70px; /* Adjust for square logo */
-    width: auto;
+    grid-row: 1; /* Make the logo span two rows */
+    grid-column: 1;
+     
+    
+}
+
+.contact-info {
+    grid-column: 2; /* Place contact-info in the second column */
+    grid-row: 1;    /* Place contact-info in the first row */
+    text-align: left; /* Align the text to the right */
+
+    margin-left: 10px;
+    font-size: 1.5rem; /* Adjust size for prominence */
+    color: #ffb522;
+    
+}
+.pagetitle {
+  grid-row: 1;
+  grid-column: 3;
+  font-size: 1.5rem;
+  
+}
+
+nav {
+    grid-row: 2;    /* Place nav in the second row */
+    grid-column: 1 / span 3; /* Place nav in the second column */
+    text-align: center; /* Align nav items to the right */
+}
+
+nav ul {
+    list-style: none;
+    display:flex; /* Flexbox to make nav items align horizontally */
+    gap: 10px;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 10px;
+    
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .article-content {
@@ -40,50 +90,9 @@ body:not(:target)  {
     display: none;
 }
 
-/* Header styles */
-header {
-    background-color: #004080;
-    color: #fff;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: Arial, sans-serif;
-}
-
-
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    background-color: #004080;
-}
 
 
 
-header h1 {
-    margin-bottom: 0.5rem;
-}
-
-header nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin-right: 15px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-header nav ul li a:hover {
-    text-decoration: underline;
-}
 
 /* Main content sections (articles) */
 section {
@@ -215,17 +224,18 @@ html {
     cursor: pointer;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-}
 
-nav ul li {
-    margin-left: 20px;
-}
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
+@media (max-width: 768px) {
+     body {
+        font-size: 12px;
+     }
+    .contact-info { font-size: 1.2rem}
+    .pagetitle {font-size: 1.5rem}
+
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+        gap: 10px; /* Reduce space between nav items on mobile */
+        font-size: 1.2rem
+    }
 }
