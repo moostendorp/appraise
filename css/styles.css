@@ -13,48 +13,56 @@ body {
     -webkit-text-size-adjust: 100%; /* Prevents automatic text scaling */
 }
 
-header {
-    background-color: #004080;
+.header-container {
     color: #fff;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto 1fr auto; /* Logo, flexible space for nav, contact info */
+    align-items: center; /* Vertically center all items in one line */
+    background-color: #004080;
+    grid-template-columns:  auto 1fr; /* Two columns: auto for logo, 1fr for content */
+    grid-template-rows: auto auto;   /* Two rows: one for contact-info, one for nav */
+    
+    column-gap: 5%;                /* Add space between columns */
+   
+    
+    
 }
 
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    background-color: #004080;
+.logo {
+    grid-row: 1; /* Make the logo span two rows */
+    grid-column:1;
+  
+    
+    
 }
 
 .contact-info {
-    font-size: 1.2rem; /* Adjust size for prominence */
-    color: #fff;
+    grid-column: 2; /* Place contact-info in the second column */
+    grid-row: 1;    /* Place contact-info in the first row */
+    text-align: left; /* Align the text to the right */
+
+    margin-left: 5%;
+    font-size: 1.5rem; /* Adjust size for prominence */
+    color: #ffb522;
+    
 }
 
-.contact-info strong {
-    font-size: 1.4rem; /* Make phone number stand out */
-    color: #ffb522; /* Highlight the phone number */
+nav {
+    grid-column: 1 / span 2; /* Place nav in the second column */
+    grid-row: 2;    /* Place nav in the second row */
+    text-align: center; /* Align nav items to the right */
 }
-
-
-
-
-.logo {
-    height: 70px; /* Adjust for square logo */
-    width: auto;
-}
-
 nav ul {
     list-style: none;
-    display: flex;
+    display:flex; /* Flexbox to make nav items align horizontally */
+    gap: 5%;
 }
 
 nav ul li {
-    margin-left: 20px;
+    list-style: none;
+    margin-left: 5%;
+    
 }
 
 nav ul li a {
@@ -62,6 +70,8 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
 }
+
+
 /* Default for desktop */
 #hero {  
     background-image: url('../images/image-664.jpg'), url('../images/image-1184.jpg');
@@ -77,9 +87,6 @@ nav ul li a {
     justify-content: center;
     
 }
-
-
-
 
 
 .hero-overlay {
@@ -241,6 +248,7 @@ footer .footer-nav ul li a {
 .about-section {
     background-color: #e6f2ff; /* Light blue to match the site's theme */
     padding: 40px;
+    display:flexbox;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     max-width: 900px;
@@ -250,86 +258,39 @@ footer .footer-nav ul li a {
 }
 
 .about-section h2 {
-    font-size: 2rem;
+  
     margin-bottom: 20px;
+    text-align: center;
     color: #004080; /* Heading color matching the site’s primary color */
 }
 
 .about-section p {
-    font-size: 1.2rem;
+    
     text-align: justify;
     color: #333;
+   
 }
 
-.logos {
+.about-section .logos {
     display: flex;
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
 }
 
-.logos img {
+.about-section .logos img {
     height: 70px; /* Adjust the size as needed */
     width: auto;
-    filter: grayscale(100%); /* Optional: make logos grayscale for consistency */
-}
-
-/* For mobile screens */
-@media only screen and (max-width: 768px) {
    
-    html {
-        font-size: 14px; /* 1rem = 13px for iPhones and smaller screens */
-    }
-    #hero {
-        background-image: url('../images/image-664.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        
-    }
-    .contact-info {
-        font-size:1.2rem; 
-    }
-    .header-container {
-        font-size:1.2rem; 
+}
+
+@media (max-width: 768px) {
        
-    }
-    .hero-content h1 {
-        font-size: 2rem; /* Resize hero text */
-    }
-    .service-item {
-        
-        flex: 1 1 calc(33.333% - 20px); /* Three equal columns with gap */
-        
+
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+        gap: 10px; /* Reduce space between nav items on mobile */
     }
 }
 
-@media only screen and (max-width: 480px) {
-    html {
-        font-size: 13px; /* 1rem = 13px for iPhones and smaller screens */
-    }
-    #hero {
-        background-image: url('../images/image-664.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        
-    }
-    .contact-info {
-        font-size:1.2rem; 
-    }
-    
-    .header-container {
-       display:flex;
-       justify-content: center;
-    }    
-    .hero-content h1 {
-        font-size: 2rem; /* Resize hero text */
-    }
-    .service-item {
-        
-        flex: 1 1 calc(33.333% - 20px); /* Three equal columns with gap */
-        
-    }
-    
-}
+
