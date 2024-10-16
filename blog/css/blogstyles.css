@@ -18,7 +18,7 @@ body {
     padding: 10px;
     display: grid;
     align-items: center; /* Vertically center all items in one line */
-    background-color: #004080;
+    background-color: #172365;
     gap: 10px;
     
 }
@@ -114,7 +114,7 @@ section:target {
 
 /* Footer styles */
 footer {
-    background-color: #004080;
+    background-color: #172365;
     color: #fff;
     text-align: center;
     padding: 10px 0;

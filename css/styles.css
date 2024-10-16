@@ -344,4 +344,24 @@ footer .footer-nav ul li a {
     }
 }
 
+.whatsapp-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #25D366;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .whatsapp-link i {
+    font-size: 20px;
+  }
+  
+  .whatsapp-link:hover {
+    background-color: #128C7E;
+  }
 
