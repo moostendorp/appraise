@@ -32,7 +32,7 @@ body {
 .logo {
     grid-row: 1; /* Make the logo span two rows */
     grid-column:1;
-  
+     
     
     
 }
